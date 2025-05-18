@@ -1,1 +1,51 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lua Obfuscator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/dracula.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/lua/lua.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Advanced Lua Obfuscator</h1>
+        
+        <div class="editor-container">
+            <div class="editor-section">
+                <h2>Input Lua</h2>
+                <textarea id="input"></textarea>
+            </div>
+            
+            <div class="controls">
+                <select id="executor">
+                    <option value="synapse">Synapse X</option>
+                    <option value="scriptware">ScriptWare</option>
+                    <option value="krnl">KRNL</option>
+                </select>
+                
+                <select id="level">
+                    <option value="low">Low</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="high">High</option>
+                    <option value="extreme">Extreme</option>
+                </select>
+                
+                <button id="obfuscate">Obfuscate</button>
+                <button id="copy">Copy</button>
+                <button id="download">Download</button>
+            </div>
+            
+            <div class="editor-section">
+                <h2>Output</h2>
+                <textarea id="output" readonly></textarea>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>
