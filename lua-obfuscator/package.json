@@ -1,1 +1,21 @@
-
+{
+  "name": "lua-obfuscator",
+  "version": "1.0.0",
+  "description": "Advanced Lua obfuscator for executors",
+  "main": "web/server.js",
+  "scripts": {
+    "start": "node web/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "luaparse": "^0.3.1",
+    "escodegen": "^2.1.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "lua-json": "^1.0.0",
+    "javascript-obfuscator": "^4.0.0"
+  },
+  "author": "",
+  "license": "MIT"
+}
